@@ -1,5 +1,5 @@
 {% set name = "torchcam" %}
-{% set version = "0.3.1" %}
+{% set version = "0.3.2" %}
 
 
 package:
@@ -8,12 +8,12 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/torchcam-{{ version }}.tar.gz
-  sha256: 400d451cbbafe0dbddbf3a22feab9e23d1317e90cf6eae16bca96e0e2ff4f076
+  sha256: 73661df8e772c117c039307aff8a5b60070c3f5cf21b42d7b45b9a9b4256b97a
 
 build:
   number: 0
   noarch: python
-  script:     
+  script:
     ## Ensure exclusion of tests folder
     - rm -rf test  # [not win]
     ## Install package {{ name }} from PyPI
@@ -27,7 +27,7 @@ requirements:
     - python >=3.6
     - matplotlib-base >=3.0.0
     - numpy >=1.14.0
-    - pillow >=8.3.2    
+    - pillow >=8.3.2
     - pytorch >=1.5.1
 
 test:
