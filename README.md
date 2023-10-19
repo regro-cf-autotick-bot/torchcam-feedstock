@@ -1,11 +1,11 @@
-About torchcam
-==============
+About torchcam-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torchcam-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/frgfm/torch-cam
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/torchcam-feedstock/blob/main/LICENSE.txt)
 
 Summary: Class activation maps for your PyTorch CNN models
 
