@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/torchcam-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/torchcam-{{ version }}.tar.gz
   sha256: 75e1ad46ad583c1b1bf0165ddf71f94eed18c99f8478d934a9062328c45ed4ef
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     ## Ensure exclusion of tests folder
@@ -22,9 +22,9 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python {{ python_min }}
   run:
-    - python >=3.6
+    - python >={{ python_min }}
     - matplotlib-base >=3.0.0
     - numpy >=1.14.0
     - pillow >=8.3.2
@@ -38,6 +38,7 @@ test:
     - pip check
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/frgfm/torch-cam
