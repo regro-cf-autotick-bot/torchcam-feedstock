@@ -1,5 +1,5 @@
 {% set name = "torchcam" %}
-{% set version = "0.4.0" %}
+{% set version = "0.5.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/torchcam-{{ version }}.tar.gz
-  sha256: 75e1ad46ad583c1b1bf0165ddf71f94eed18c99f8478d934a9062328c45ed4ef
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/torchcam-{{ version }}.tar.gz
+  sha256: e4c41c0e9dff72f09d9eddb47a2cd33e418bc409485eca2cce9f97f02f1dd048
 
 build:
   number: 0
